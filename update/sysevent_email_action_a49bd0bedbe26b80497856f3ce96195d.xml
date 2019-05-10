@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>x_matsa_reservely_reservely_events</collection>
+        <condition/>
+        <content_type>text/plain</content_type>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
+        <event_name>x_matsa_reservely.reservely.calendar.int</event_name>
+        <event_parm_1>true</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from>reservely@cloudpires.com</from>
+        <generation_type>event</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html/>
+        <message_list/>
+        <message_text/>
+        <name>Reservely Calendar Integration</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields/>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>Reservely calendar invite for: ${title}</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>josh.virelli</sys_created_by>
+        <sys_created_on>2018-12-26 16:17:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>a49bd0bedbe26b80497856f3ce96195d</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Reservely Calendar Integration</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Reservely" source="x_matsa_reservely">622edc9edb5567405dbe38f0ad9619fc</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Reservely">622edc9edb5567405dbe38f0ad9619fc</sys_scope>
+        <sys_update_name>sysevent_email_action_a49bd0bedbe26b80497856f3ce96195d</sys_update_name>
+        <sys_updated_by>josh.virelli</sys_updated_by>
+        <sys_updated_on>2018-12-26 21:06:36</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="reservely.calendar.integration">7ea95c3edbe26b80497856f3ce96198d</template>
+        <type>vcalendar</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

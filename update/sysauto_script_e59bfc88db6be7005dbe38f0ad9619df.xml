@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Deactivate Reservely Events after End</name>
+        <run_as display_value="">b712902adb6807005dbe38f0ad961953</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period>1970-01-01 01:00:00</run_period>
+        <run_start>2019-02-05 23:00:01</run_start>
+        <run_time>1970-01-01 05:00:00</run_time>
+        <run_type>periodically</run_type>
+        <script><![CDATA[var reservelyEvent = new GlideRecord('x_matsa_reservely_reservely_events');
+//Query for active events with the Event End time on the current hour
+reservelyEvent.addEncodedQuery('event_endONCurrent hour@javascript:gs.beginningOfCurrentHour()@javascript:gs.endOfCurrentHour()^active=true');
+reservelyEvent.query();
+while(reservelyEvent.next()){
+	reservelyEvent.active = false;
+	reservelyEvent.update();
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>josh.virelli</sys_created_by>
+        <sys_created_on>2019-02-05 22:45:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e59bfc88db6be7005dbe38f0ad9619df</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Deactivate Reservely Events after End</sys_name>
+        <sys_package display_value="Reservely" source="x_matsa_reservely">622edc9edb5567405dbe38f0ad9619fc</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Reservely">622edc9edb5567405dbe38f0ad9619fc</sys_scope>
+        <sys_update_name>sysauto_script_e59bfc88db6be7005dbe38f0ad9619df</sys_update_name>
+        <sys_updated_by>josh.virelli</sys_updated_by>
+        <sys_updated_on>2019-02-05 22:54:28</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

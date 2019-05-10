@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_impex_entry">
+    <sys_impex_entry action="INSERT_OR_UPDATE">
+        <default_value/>
+        <field>event_end</field>
+        <map display_value="icalendar.x_matsa_reservely_reservely_ev">26f7d4fadbe26b80497856f3ce961900</map>
+        <mapped_field>event_end</mapped_field>
+        <name>dtend</name>
+        <script/>
+        <sys_class_name>sys_impex_entry</sys_class_name>
+        <sys_created_by>josh.virelli</sys_created_by>
+        <sys_created_on>2018-12-26 16:02:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b138d8fadbe26b80497856f3ce9619e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>dtend</sys_name>
+        <sys_package display_value="Reservely" source="x_matsa_reservely">622edc9edb5567405dbe38f0ad9619fc</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Reservely">622edc9edb5567405dbe38f0ad9619fc</sys_scope>
+        <sys_update_name>sys_impex_entry_b138d8fadbe26b80497856f3ce9619e5</sys_update_name>
+        <sys_updated_by>josh.virelli</sys_updated_by>
+        <sys_updated_on>2018-12-26 16:02:21</sys_updated_on>
+        <table>x_matsa_reservely_reservely_events</table>
+        <type>field</type>
+        <var_name/>
+    </sys_impex_entry>
+</record_update>

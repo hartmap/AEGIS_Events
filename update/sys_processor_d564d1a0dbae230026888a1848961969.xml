@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_processor">
+    <sys_processor action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <description/>
+        <interactive>false</interactive>
+        <name>ReservelyEventConfirmation</name>
+        <parameters/>
+        <params_endpoint/>
+        <path>reservely_event_register</path>
+        <path_endpoint>x_matsa_reservely_reservely_event_register</path_endpoint>
+        <require_csrf>false</require_csrf>
+        <roles/>
+        <script><![CDATA[(function process(g_request, g_response, g_processor) {
+
+	var attendee = g_request.getParameter('attendee_id');
+
+	var att = new GlideRecord('x_matsa_reservely_reservely_attendees');
+	att.get(attendee);
+
+	var email = att.email_address;
+	var event = att.event.title;
+
+	att.confirmed = true;
+	att.update();
+
+	var ev = new GlideRecord('x_matsa_reservely_reservely_events');
+	ev.get(att.event.toString());
+	//Send calendar invite
+	gs.eventQueue('x_matsa_reservely.reservely.calendar.int',ev,email,'');
+
+
+	g_processor.writeOutput("text/plain", 'The email address: ' + email + ' has been confirmed for the event "' + event +'"');
+
+})(g_request, g_response, g_processor);]]></script>
+        <sys_class_name>sys_processor</sys_class_name>
+        <sys_created_by>josh.virelli</sys_created_by>
+        <sys_created_on>2018-12-19 20:38:49</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d564d1a0dbae230026888a1848961969</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>ReservelyEventConfirmation</sys_name>
+        <sys_package display_value="Reservely" source="x_matsa_reservely">622edc9edb5567405dbe38f0ad9619fc</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Reservely">622edc9edb5567405dbe38f0ad9619fc</sys_scope>
+        <sys_update_name>sys_processor_d564d1a0dbae230026888a1848961969</sys_update_name>
+        <sys_updated_by>matt.saxton</sys_updated_by>
+        <sys_updated_on>2019-01-02 17:22:43</sys_updated_on>
+        <type>script</type>
+    </sys_processor>
+</record_update>

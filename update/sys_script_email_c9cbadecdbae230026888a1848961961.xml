@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>reservely.unregister</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+										   /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+										   /* Optional GlideRecord */ event) {
+
+	// Add your code here
+	var instance = gs.getProperty('instance_name');
+	var link = 'https://'+instance+'.service-now.com/x_matsa_reservely_reservely_event_unregister.do?attendee_id='+current.getUniqueValue();
+
+	//Get event start and format
+	var start = current.event.event_start.getDisplayValue();
+	var gdt = new GlideDateTime(start);
+	var time = gdt.getTime();
+	var date = gdt.getDate();
+	var eventStart = date.getByFormat('E, MMMM dd, yyyy') + ' @ ' + time.getByFormat('h:mm a');
+
+	template.print('<h3 style="font-family:Helvetica;">Confirm your unregistration for: '+current.event.title+'</h3>');
+	template.print('<div><ul style="list-style-type: none; padding-left: 0; font-family:Helvetica;"><li>'+ eventStart +'</li><li>'+ current.event.address_1 +'</li><li>'+ current.event.address_2 +'</li><li>'+ current.event.city +', ' + current.event.state + ' ' + current.event.zip_code +'</li></ul></div>');
+	template.print('<div><a href="'+link+'"><button style="padding: 16px 32px; font-size: 16px; border-radius: 5px; color: white; background-color: #ff6666; font-family:Helvetica;">Confirm Unregistration</button></a></div>');
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>josh.virelli</sys_created_by>
+        <sys_created_on>2018-12-19 22:20:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c9cbadecdbae230026888a1848961961</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>reservely.unregister</sys_name>
+        <sys_package display_value="Reservely" source="x_matsa_reservely">622edc9edb5567405dbe38f0ad9619fc</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Reservely">622edc9edb5567405dbe38f0ad9619fc</sys_scope>
+        <sys_update_name>sys_script_email_c9cbadecdbae230026888a1848961961</sys_update_name>
+        <sys_updated_by>josh.virelli</sys_updated_by>
+        <sys_updated_on>2019-01-02 22:10:35</sys_updated_on>
+    </sys_script_email>
+</record_update>

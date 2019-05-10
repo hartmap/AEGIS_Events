@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Reservely Events" max_length="40" name="x_matsa_reservely_reservely_events" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Address 1" max_length="100" name="address_1" type="string"/>
+        <element label="Address 2" max_length="100" name="address_2" type="string"/>
+        <element label="City" max_length="100" name="city" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="100000" name="description" type="html"/>
+        <element attributes="edge_encryption_enabled=true" label="Event End" max_length="40" name="event_end" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Event Start" max_length="40" name="event_start" type="glide_date_time"/>
+        <element label="Event Type" max_length="100" name="event_type" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;var loc = current.location ? current.location + ', ' : '';&#10;&#9;var add1 = current.address_1 ? current.address_1 + ', ' : '';&#10;&#9;var add2 = current.address_2 ? current.address_2 + ', ' : '';&#10;&#10;&#9;var fullAdd = loc + add1 + add2 + current.city + ', ' + current.state + ' ' + current.zip_code;&#10;&#10;&#9;// Add your code here&#10;&#9;return fullAdd;  // return the calculated value&#10;&#10;})(current);" label="Full address" max_length="400" name="full_address" read_only="true" type="string" virtual="true"/>
+        <element attributes="pdf_cell_type=image,edge_encryption_enabled=true" label="Image" max_length="40" name="image" type="user_image"/>
+        <element label="Location" max_length="250" name="location" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Max Users" max_length="40" name="max_users" type="integer"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="State" max_length="25" name="state" type="string"/>
+        <element label="Title" max_length="100" name="title" type="string"/>
+        <element label="Zip Code" max_length="5" name="zip_code" type="string"/>
+    </element>
+</database>

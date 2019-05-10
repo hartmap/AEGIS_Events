@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope, $uibModal) {
+	/* widget controller */
+	var c = this;
+	
+	c.resetUserInput = function() {
+		c.data.showEmailValidationError = false;
+		c.data.showEmailConfirmationError = false;
+		c.data.successfulRegister = false;
+		c.data.successfulUnregister = false;
+		c.data.duplicateRegister=false;
+		c.data.unregisterNotFound = false;
+		c.data.firstName = '';
+		c.data.lastName = '';
+		c.data.company = '';
+		c.data.email = '';
+		c.data.confirm_email = '';
+		c.server.update();
+	};
+	
+	c.openModal = function(event) {
+		c.data.event = event;
+		c.server.update().then(function() {
+			c.modalInstance = $uibModal.open({
+				templateUrl: 'register-modal.html',
+				scope: $scope
+			});
+
+			c.modalInstance.result.then(function () {
+				//Modal Closed
+				c.resetUserInput();
+			}, function () {
+				//Modal Dismissed
+				c.resetUserInput();
+			});
+
+		});
+	};
+
+	c.closeModal = function() {
+		c.modalInstance.close();
+	};
+
+	c.uiAction = function(action,reservelyEvent){
+
+		var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+		if(emailRegex.test(c.data.email)){
+			if(c.data.email == c.data.confirm_email){
+				c.data.action = action;
+				c.data.reservelyEvent = reservelyEvent;
+				c.data.duplicateRegister=false;
+				c.data.unregisterNotFound = false;
+				c.server.update().then(function() {
+					c.data.action = undefined;
+				});
+			}else{
+				c.data.showEmailValidationError = false;
+				c.data.showEmailConfirmationError = true;
+				c.server.update();
+			}
+		}else{
+			c.data.showEmailValidationError = true;
+			c.server.update();
+		}
+	};
+
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>$border-radius: 5px;
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: europa, sans-serif;
+  font-weight: 700;
+}
+
+p,ol,ul,li,label {
+  font-family: europa, sans-serif;
+  font-weight: 300;
+}
+
+.title-block {
+  background-color: #0C1B21;
+  color: #fff;
+  font-family: europa, sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  padding: 45px 0px;
+  border-radius: $border-radius $border-radius 0 0;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.custom-card{
+  padding: 0px;
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.10) 0px 0px 5px 0px;
+
+  .img-container{
+    height: 250px;
+    overflow: hidden;
+
+    img{
+      object-fit: cover;
+      width: 100%;
+      min-height: 100%;
+    }
+  }
+}
+
+.caption{
+  background-color: #fff;
+  padding: 13px;
+  border-radius: 0 0 $border-radius $border-radius;
+
+  h3 {
+    color: #0C1B21;
+  }
+
+  p {
+    color: #7A8285;
+  }
+
+}
+}
+
+.card-link:hover{
+  .custom-card{
+    box-shadow: rgba(0, 0, 0, 0.10) 5px 0px 15px 0px;
+  }
+}
+
+.event-date{
+  position: absolute;
+  left: 36px;
+  top: 20px;
+  background: #fff;
+  width: 75px;
+  height: 75px;
+  border-radius: $border-radius;
+  text-align: center;
+  padding: 30px 0;
+  box-shadow: rgba(0, 0, 0, 0.10) 5px 5px 10px 0px;
+  z-index: 3;
+
+  span{
+    font-size: 28px;
+    font-weight: 500;
+    color: #384449;
+  }
+}
+
+.calendar-top {
+  position: absolute;
+  left: 36px;
+  top: 20px;
+  background: #FF6666;
+  width: 75px;
+  height: 30px;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  z-index: 4;
+
+  h6{
+    color: #fff;
+    font-family: europa, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin: 2px 0 0 0;
+  }
+}
+
+.modal-dialog{
+  width: 75%;
+}
+
+.center{
+  text-align: center;
+}
+
+.modal-image{
+  max-width:100%;
+  object-fit: cover;
+  height: 83vh;
+}
+
+.modal-content {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 83vh;
+}
+
+form,.button-row {
+  width: 90%;
+}
+
+.form-group,label {
+  margin-left: 15px;
+  margin-right: 15px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>reservely_card</id>
+        <internal>false</internal>
+        <link/>
+        <name>Reservely Card</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+
+	if(!input){
+		data.eventData = get_eventData();
+		data.showEmailError = false;
+		data.successfulRegister = false;
+		data.successfulUnregister = false;
+		data.unregisterNotFound = false;
+		data.duplicateRegister=false;
+	}
+
+	if(input){
+		if(input.action){
+			if(input.action == 'register'){
+				var dup = new GlideRecord('x_matsa_reservely_reservely_attendees');
+				dup.addQuery('event',input.reservelyEvent);
+				dup.addQuery('email_address',input.email);
+				dup.query();
+				if(dup.next()){
+					data.duplicateRegister=true;
+				}else{
+					var reg = new GlideRecord('x_matsa_reservely_reservely_attendees');
+					reg.newRecord();
+					reg.event = input.reservelyEvent;
+					reg.first_name = input.firstName;
+					reg.last_name = input.lastName;
+					reg.email_address = input.email;
+					reg.company = input.company;
+					reg.insert();
+					data.successfulRegister = true;
+				}
+			}else if(input.action == 'unregister'){
+				var unreg = new GlideRecord('x_matsa_reservely_reservely_attendees');
+				unreg.addQuery('event',input.reservelyEvent);
+				unreg.addQuery('email_address',input.email);
+				unreg.query();
+				if(unreg.next()){
+					data.successfulUnregister = true;
+					gs.eventQueue('x_matsa_reservely.reservely.unregister',unreg,'','');
+				}else{
+					data.unregisterNotFound = true;
+				}
+
+
+			}
+		}
+	}
+})();
+
+function get_eventData(){
+	var eventData = [];
+	var event = new GlideRecord('x_matsa_reservely_reservely_events');
+	event.addQuery('active', true);
+	event.orderBy('event_start');
+	event.query();
+
+	while(event.next()){
+
+		var startDate = new GlideDateTime(event.event_start.getDisplayValue());
+		var weekday = new Array(7);
+		weekday[1] = "Monday";
+		weekday[2] = "Tuesday";
+		weekday[3] = "Wednesday";
+		weekday[4] = "Thursday";
+		weekday[5] = "Friday";
+		weekday[6] = "Saturday";
+		weekday[7] =  "Sunday";
+
+		var theDay = weekday[startDate.getDayOfWeekUTC()];
+		console.log('theDay = ' + theDay);
+
+		var month = startDate.getMonthLocalTime();
+		var date = event.event_start.getDisplayValue().substring(8,10);
+
+		var monthName = new Array(12);
+		monthName[1] = "JAN";
+		monthName[2] = "FEB";
+		monthName[3] = "MAR";
+		monthName[4] = "APR";
+		monthName[5] = "MAY";
+		monthName[6] = "JUN";
+		monthName[7] = "JUL";
+		monthName[8] = "AUG";
+		monthName[9] = "SEP";
+		monthName[10] = "OCT";
+		monthName[11] = "NOV";
+		monthName[12] = "DEC";
+
+		var theMonth = monthName[month];
+
+		var att = new GlideRecord('x_matsa_reservely_reservely_attendees');
+		att.addQuery('event',event.getUniqueValue());
+		att.addQuery('confirmed', true);
+		att.query();
+
+		var attendees = att.getRowCount();
+		var spotsLeft = event.max_users - attendees;
+
+		var eventStart = new GlideDateTime(event.event_start);
+		eventStart = eventStart.getNumericValue();
+		var eventEnd = new GlideDateTime(event.event_end);
+		eventEnd = eventEnd.getNumericValue();
+
+		var imgURL = gs.getProperty('glide.servlet.uri') + event.image.getDisplayValue()
+		eventData.push({
+			day:theDay,
+			date:date,
+			month:theMonth,
+			number:event.number.getDisplayValue(),
+			title:event.title.getDisplayValue(),
+			image:imgURL,
+			description:event.description.getDisplayValue(),
+			event_start:eventStart,
+			event_end:eventEnd,
+			event_type:event.event_type.getDisplayValue(),
+			max_users:event.max_users.getDisplayValue(),
+			location:event.location.getDisplayValue(),
+			city:event.city.getDisplayValue(),
+			state:event.state.getDisplayValue(),
+			address_1:event.address_1.getDisplayValue(),
+			address_2:event.address_2.getDisplayValue(),
+			zip_code:event.zip_code.getDisplayValue(),
+			sys_id:event.getUniqueValue(),
+			attendees: attendees,
+			spots_left: spotsLeft
+		});
+	}
+
+	return eventData;
+}]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-30 23:28:49</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b2c44ca6db8e230026888a18489619d8</sys_id>
+        <sys_mod_count>306</sys_mod_count>
+        <sys_name>Reservely Card</sys_name>
+        <sys_package display_value="Reservely" source="x_matsa_reservely">622edc9edb5567405dbe38f0ad9619fc</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Reservely">622edc9edb5567405dbe38f0ad9619fc</sys_scope>
+        <sys_update_name>sp_widget_b2c44ca6db8e230026888a18489619d8</sys_update_name>
+        <sys_updated_by>josh.virelli</sys_updated_by>
+        <sys_updated_on>2018-12-26 21:22:23</sys_updated_on>
+        <template><![CDATA[<div class="row title-block">
+  RESERVELY EVENTS
+</div>
+
+<div class="row">
+
+  <div ng-repeat="event in data.eventData">
+    <div class="col-sm-6 col-md-4">
+      <a href="javascript:void(0)" ng-click="c.openModal(event)" class="card-link">
+        <div class="calendar-top">
+          <h6>{{event.month}}</h6>
+        </div>
+        <div class="event-date">
+          <span>{{event.date}}</span> 
+        </div>
+        <div class="thumbnail custom-card">
+          <div class="img-container">
+            <img src={{event.image}} alt="">
+          </div>
+          <div class="caption">
+            <h3>{{event.title}}</h3>
+            <p id="limited-warning">{{event.spots_left}} spots left</p>
+            <p>{{event.city}}/{{event.state}}<br>{{event.day}} {{event.event_start | date:'medium'}}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

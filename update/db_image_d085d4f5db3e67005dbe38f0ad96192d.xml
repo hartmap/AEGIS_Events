@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <format>png</format>
+        <height>32</height>
+        <image>80b554f5db3e67005dbe38f0ad9619f0</image>
+        <name>cp-favicon.png</name>
+        <size_bytes>1094</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>josh.virelli</sys_created_by>
+        <sys_created_on>2019-01-04 23:32:31</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d085d4f5db3e67005dbe38f0ad96192d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>cp-favicon.png</sys_name>
+        <sys_package display_value="Reservely" source="x_matsa_reservely">622edc9edb5567405dbe38f0ad9619fc</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Reservely">622edc9edb5567405dbe38f0ad9619fc</sys_scope>
+        <sys_update_name>db_image_d085d4f5db3e67005dbe38f0ad96192d</sys_update_name>
+        <sys_updated_by>josh.virelli</sys_updated_by>
+        <sys_updated_on>2019-01-04 23:32:57</sys_updated_on>
+        <thumbnail/>
+        <width>32</width>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#71013</average_image_color>
+        <chunk_size_bytes>734003</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <encryption_context/>
+        <file_name>image</file_name>
+        <image_height>32</image_height>
+        <image_width>32</image_width>
+        <size_bytes>1094</size_bytes>
+        <size_compressed>1117</size_compressed>
+        <sys_created_by>josh.virelli</sys_created_by>
+        <sys_created_on>2019-01-04 23:32:57</sys_created_on>
+        <sys_id>80b554f5db3e67005dbe38f0ad9619f0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>josh.virelli</sys_updated_by>
+        <sys_updated_on>2019-01-04 23:32:57</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>d085d4f5db3e67005dbe38f0ad96192d</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="80b554f5db3e67005dbe38f0ad9619f0">80b554f5db3e67005dbe38f0ad9619f0</sys_attachment>
+        <sys_created_by>josh.virelli</sys_created_by>
+        <sys_created_on>2019-01-04 23:32:57</sys_created_on>
+        <sys_id>88b554f5db3e67005dbe38f0ad9619f0</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>AUYEufuJUE5HDQoaCgAAAA1JSERSAAAAIAAAACAIBgAAAHN6evQAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAP4SURBVFiFxZddTBRXFMf/88Xi1t01Pmm62GbTFxRYbDBaRZaHtaWSJqYPltgmTWgkwZCIbz6i8cUXi0Z9MX48tNW0KVhsqjYlgbba9KkslNZos6As2hqtLgO4Lrs7zb3MjHf3zCysH/WXTHI/zpz/mftx7h3JMAy8TNTFavuCodcBbDOfWgCBApMkgCEA59mjJ+LjxIkDC46ALxhiYt0AIqSzOIMAOvVEfKiYlWsAvmBoGYAuALtJZ2kcZn70RPyh01uOAZjiAwDCpPPpiAFodApC/h/EYfoaMH27B/CCxIsGUbgLuhYrvqriVVSvWY3q1ZVITk1hZPRP/rByEcKmRqdlYq8Bc7X/5v7uPAGfD5+fPI76jRtIH+O7yz9gb9cB3JqYJH0Ca63dIU5BNzEroLlpC0Z+HXQVZ2x9J4rhXwawY/v7pM9Ji0+BmWSK7nPm8Pihg3Y9mUxicPBHxIZivB6JNCBcG0YgMJ+fNq17E1982UP8mESYJktWfAp8wRCbk0+JmQmb758v98Hv9/OG4dgwWlt3Yvj3UUjK/CAamQxWVVSgp+crDMVi2Nm2C6p3KZQyD2RVIz4B7NET8W5rEW4j3QLtrR/b4uzLo9G3oaey0LyvPDHyALfv/Yu6uvWQFBXqEi9g5JB9/AjZ9GOnQJimHUAtURVoboralf37DmA6nYOskhQCSZahLfWTdpdAuKY1BTQdCjxM3LArK1a+Bj2VIjYlIck8kJm/JyT6GQXUv7XebmDDPzX7iNiUjDkijAUDeHD/vl1mK1ySJWLzLCwYAMtuIjXVVcTmeQSQJD2WgabxbWfxYcsHxObpkFJiAEUvDUeOHrPLHbvasLl+I7GxYCP0XvO7pJ18mKKOiwGcJxYCZ7/+Bjdv3rIbLl3oRUd7W54NWx+s7dK3vTj32Rl8tKOF+BGRVPUiq1rbkKXiMWIl8MaK5ejv/95OtRY/XbmKZYEAqqvW5LWzU7Gypo7vHCc0r69GnxwbEU/DgWLnwdzMNFYu9+PUqRNoiDSQfhErVf/x15jjrpEV7drsvTuVvCy0dxJLAcXj4ak2uqUJn7BzQFiYFn19F3gfS8ej1+OO4ly0zNNhlfPuhL5gqNv1EmoYmJvVeTGbTiOXTsHI5fJMJFXjaVYpKyOvWyhaee/M3YR9VjvdiBodb0WSBElWYeQyXKCYiBuSrEzImtaeNxpixby1Npq3WIKsLvo/hsDE1XLvOn1y7B/XABYKQlIU4vhZxB0DKAjicIEjfpKVAptzN3Hu0+nHRKTw14ydYrnMHLEjX6Zo19hqn7493k86SwnAwvo5NbLZlkxqNgwY5QWuUiy9sgwnK+pplmQW4/fl/p4D+A8GdG/ArkwZaQAAAABJRU5ErkJggnXfrNNGBAAA</data>
+        <length>1476</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="80b554f5db3e67005dbe38f0ad9619f0">80b554f5db3e67005dbe38f0ad9619f0</sys_attachment>
+        <sys_created_by>josh.virelli</sys_created_by>
+        <sys_created_on>2019-01-04 23:32:57</sys_created_on>
+        <sys_id>0cb554f5db3e67005dbe38f0ad9619f0</sys_id>
+    </sys_attachment_doc>
+</record_update>
