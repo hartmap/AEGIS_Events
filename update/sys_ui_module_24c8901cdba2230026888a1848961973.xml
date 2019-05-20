@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="sys_ui_module">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
     <sys_ui_module action="INSERT_OR_UPDATE">
         <active>true</active>
         <application display_value="Reservely Events">574f94d6371123004a9b7e5004990e42</application>

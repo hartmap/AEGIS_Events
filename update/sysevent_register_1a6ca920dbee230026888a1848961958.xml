@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sysevent_register">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
     <sysevent_register action="INSERT_OR_UPDATE">
         <description>Fires notification to email address provided to confirm unregistration</description>
         <event_name>x_matsa_reservely.reservely.unregister</event_name>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_portal">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
     <sp_portal action="INSERT_OR_UPDATE">
         <css_variables/>
         <default>false</default>
@@ -35,4 +34,5 @@
         <title>Reservely</title>
         <url_suffix>rlp</url_suffix>
     </sp_portal>
+    <sys_translated_text action="delete_multiple" query="documentkey=c95344e2db8e230026888a1848961916"/>
 </record_update>

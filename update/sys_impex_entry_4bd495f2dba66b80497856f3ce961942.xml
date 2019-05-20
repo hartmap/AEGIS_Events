@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_impex_entry">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_impex_entry">
     <sys_impex_entry action="INSERT_OR_UPDATE">
         <default_value/>
         <field>full_address</field>

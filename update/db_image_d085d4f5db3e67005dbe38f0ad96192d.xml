@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="db_image">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
     <db_image action="INSERT_OR_UPDATE">
         <active>true</active>
         <category>general</category>
@@ -36,12 +35,13 @@
         <image_width>32</image_width>
         <size_bytes>1094</size_bytes>
         <size_compressed>1117</size_compressed>
+        <state>available</state>
         <sys_created_by>josh.virelli</sys_created_by>
         <sys_created_on>2019-01-04 23:32:57</sys_created_on>
         <sys_id>80b554f5db3e67005dbe38f0ad9619f0</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>josh.virelli</sys_updated_by>
-        <sys_updated_on>2019-01-04 23:32:57</sys_updated_on>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>guest</sys_updated_by>
+        <sys_updated_on>2019-05-15 19:22:37</sys_updated_on>
         <table_name>ZZ_YYdb_image</table_name>
         <table_sys_id>d085d4f5db3e67005dbe38f0ad96192d</table_sys_id>
     </sys_attachment>

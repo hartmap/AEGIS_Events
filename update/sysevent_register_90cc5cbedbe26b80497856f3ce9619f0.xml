@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sysevent_register">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
     <sysevent_register action="INSERT_OR_UPDATE">
         <description>Fires calendar invite cancellation notification to email address provided</description>
         <event_name>x_matsa_reservely.calendar.integration.r</event_name>

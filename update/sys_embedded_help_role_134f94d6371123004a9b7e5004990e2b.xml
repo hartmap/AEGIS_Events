@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_embedded_help_role">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
     <sys_embedded_help_role action="INSERT_OR_UPDATE">
         <order>1000</order>
         <role display_value="x_matsa_reservely.reservely_events_user" name="x_matsa_reservely.reservely_events_user">0b4f1496371123004a9b7e5004990e3a</role>
