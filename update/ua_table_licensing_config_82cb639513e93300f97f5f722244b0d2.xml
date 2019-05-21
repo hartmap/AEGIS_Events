@@ -4,24 +4,24 @@
         <license_condition/>
         <license_model>none</license_model>
         <license_roles/>
-        <name>x_matsa_reservely_reservely_events</name>
+        <name>x_matsa_reservely_reservely_attendees</name>
         <op_delete>true</op_delete>
         <op_insert>true</op_insert>
         <op_update>true</op_update>
         <owner_condition/>
         <sys_class_name>ua_table_licensing_config</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-10-23 23:57:45</sys_created_on>
+        <sys_created_by>josh.virelli</sys_created_by>
+        <sys_created_on>2018-12-18 21:39:47</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>f8402f5d4fa57b008f458a4e0210c7ff</sys_id>
+        <sys_id>82cb639513e93300f97f5f722244b0d2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_matsa_reservely_reservely_events</sys_name>
+        <sys_name>x_matsa_reservely_reservely_attendees</sys_name>
         <sys_package display_value="Reservely" source="x_matsa_reservely">622edc9edb5567405dbe38f0ad9619fc</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Reservely">622edc9edb5567405dbe38f0ad9619fc</sys_scope>
-        <sys_update_name>ua_table_licensing_config_f8402f5d4fa57b008f458a4e0210c7ff</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-10-23 23:57:45</sys_updated_on>
+        <sys_update_name>ua_table_licensing_config_82cb639513e93300f97f5f722244b0d2</sys_update_name>
+        <sys_updated_by>josh.virelli</sys_updated_by>
+        <sys_updated_on>2018-12-18 21:39:47</sys_updated_on>
     </ua_table_licensing_config>
 </record_update>
