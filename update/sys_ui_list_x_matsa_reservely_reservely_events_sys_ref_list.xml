@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_matsa_reservely_reservely_events" version="2" view="sys_ref_list">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_matsa_reservely_reservely_events" element="NULL" name="x_matsa_reservely_reservely_events" parent="NULL" relationship="NULL" sys_domain="global" view="12d03e37fdeb300058483f6ad72f8fc7">3d43bf72dbf23b40aff80c65ca961917</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>hartmap</sys_created_by>
+            <sys_created_on>2019-07-26 14:26:10</sys_created_on>
+            <sys_id>7943bf72dbf23b40aff80c65ca961918</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>hartmap</sys_updated_by>
+            <sys_updated_on>2019-07-26 14:26:10</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_matsa_reservely_reservely_events</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>hartmap</sys_created_by>
+            <sys_created_on>2019-07-26 14:26:10</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>3d43bf72dbf23b40aff80c65ca961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_matsa_reservely_reservely_events</sys_name>
+            <sys_package display_value="Reservely" source="x_matsa_reservely">622edc9edb5567405dbe38f0ad9619fc</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Reservely">622edc9edb5567405dbe38f0ad9619fc</sys_scope>
+            <sys_update_name>sys_ui_list_x_matsa_reservely_reservely_events_sys_ref_list</sys_update_name>
+            <sys_updated_by>hartmap</sys_updated_by>
+            <sys_updated_on>2019-07-26 14:26:10</sys_updated_on>
+            <sys_user/>
+            <view display_value="Reference List" name="sys_ref_list">12d03e37fdeb300058483f6ad72f8fc7</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>
