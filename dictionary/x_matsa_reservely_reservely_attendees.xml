@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Reservely Attendees" max_length="40" name="x_matsa_reservely_reservely_attendees" type="collection">
+    <element label="Upcoming Events Attendees" max_length="40" name="x_matsa_reservely_reservely_attendees" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Attended" max_length="40" name="attended" type="boolean"/>
         <element label="Company" max_length="400" name="company" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Confirmed" max_length="40" name="confirmed" type="boolean"/>

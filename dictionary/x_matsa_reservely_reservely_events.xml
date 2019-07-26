@@ -1,17 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Reservely Events" max_length="40" name="x_matsa_reservely_reservely_events" type="collection">
+    <element label="Upcoming Events" max_length="40" name="x_matsa_reservely_reservely_events" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Address 1" max_length="100" name="address_1" type="string"/>
         <element label="Address 2" max_length="100" name="address_2" type="string"/>
-        <element label="Audience" max_length="32" name="audience" reference="sys_user_group" type="reference"/>
+        <element label="Audience" max_length="32" name="audience" read_only="true" reference="sys_user_group" type="reference"/>
         <element label="City" max_length="100" name="city" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Description" max_length="100000" name="description" type="html"/>
-        <element attributes="edge_encryption_enabled=true" calculation="var date = current.sys_created_on.getDisplayValue();;&#13;&#10;//Split the date to get the YYYYMMDDTHHMMZ&#13;&#10;&#9;var month = date.substr(5,2);&#13;&#10;&#9;var day = date.substr(8,2);&#13;&#10;&#9;var year = date.substr(0,4);&#13;&#10;&#9;var hr = date.substr(11,2);&#13;&#10;&#9;var min = date.substr(14,2);&#13;&#10;&#9;current.dtend = year + month + day  + 'T' + hr + min + '00T000000Z';" label="Dtstamp" max_length="40" name="dtstamp" type="string" virtual="true"/>
-        <element attributes="edge_encryption_enabled=true" calculation="var date = current.event_end.getDisplayValue();;&#13;&#10;//Split the date to get the YYYYMMDDTHHMMZ&#13;&#10;&#9;var month = date.substr(5,2);&#13;&#10;&#9;var day = date.substr(8,2);&#13;&#10;&#9;var year = date.substr(0,4);&#13;&#10;&#9;var hr = date.substr(11,2);&#13;&#10;&#9;var min = date.substr(14,2);&#13;&#10;&#9;current.dtend = year + month + day  + 'T' + hr + min + '00';" label="DT End" max_length="40" name="dt_end" type="string" virtual="true"/>
-        <element attributes="edge_encryption_enabled=true" calculation="var date = current.event_start.getDisplayValue();;&#13;&#10;//Split the date to get the YYYYMMDDTHHMMZ&#13;&#10;&#9;var month = date.substr(5,2);&#13;&#10;&#9;var day = date.substr(8,2);&#13;&#10;&#9;var year = date.substr(0,4);&#13;&#10;&#9;var hr = date.substr(11,2);&#13;&#10;&#9;var min = date.substr(14,2);&#13;&#10;&#9;current.dtstart = year + month + day  + 'T' + hr + min + '00';" label="DT Start" max_length="40" name="dt_start" type="string" virtual="true"/>
+        <element attributes="edge_encryption_enabled=true" calculation="var date = current.sys_created_on.getDisplayValue();;&#13;&#10;//Split the date to get the YYYYMMDDTHHMMZ&#13;&#10;&#9;var month = date.substr(5,2);&#13;&#10;&#9;var day = date.substr(8,2);&#13;&#10;&#9;var year = date.substr(0,4);&#13;&#10;&#9;var hr = date.substr(11,2);&#13;&#10;&#9;var min = date.substr(14,2);&#13;&#10;&#9;current.dtend = year + month + day  + 'T' + hr + min + '00T000000Z';" label="Dtstamp" max_length="40" name="dtstamp" read_only="true" type="string" virtual="true"/>
+        <element attributes="edge_encryption_enabled=true" calculation="var date = current.event_end.getDisplayValue();;&#13;&#10;//Split the date to get the YYYYMMDDTHHMMZ&#13;&#10;&#9;var month = date.substr(5,2);&#13;&#10;&#9;var day = date.substr(8,2);&#13;&#10;&#9;var year = date.substr(0,4);&#13;&#10;&#9;var hr = date.substr(11,2);&#13;&#10;&#9;var min = date.substr(14,2);&#13;&#10;&#9;current.dtend = year + month + day  + 'T' + hr + min + '00';" label="DT End" max_length="40" name="dt_end" read_only="true" type="string" virtual="true"/>
+        <element attributes="edge_encryption_enabled=true" calculation="var date = current.event_start.getDisplayValue();;&#13;&#10;//Split the date to get the YYYYMMDDTHHMMZ&#13;&#10;&#9;var month = date.substr(5,2);&#13;&#10;&#9;var day = date.substr(8,2);&#13;&#10;&#9;var year = date.substr(0,4);&#13;&#10;&#9;var hr = date.substr(11,2);&#13;&#10;&#9;var min = date.substr(14,2);&#13;&#10;&#9;current.dtstart = year + month + day  + 'T' + hr + min + '00';" label="DT Start" max_length="40" name="dt_start" read_only="true" type="string" virtual="true"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="60 minutes" label="Duration" max_length="40" name="duration" type="string">
+            <choice>
+                <element inactive_on_update="false" label="30 min." sequence="0" value="30 min."/>
+                <element inactive_on_update="false" label="60 min." sequence="1" value="60 min."/>
+                <element inactive_on_update="false" label="90 min." sequence="2" value="90 min."/>
+                <element inactive_on_update="false" label="120 min." sequence="3" value="120 min."/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="open" label="Enrollment Status" max_length="40" name="enrollment_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Closed" value="closed"/>
+                <element inactive_on_update="false" label="Open" value="open"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" label="Event End" max_length="40" name="event_end" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="Event Start" max_length="40" name="event_start" type="glide_date_time"/>
-        <element label="Event Type" max_length="100" name="event_type" type="string"/>
+        <element choice="1" label="Event Type" mandatory="true" max_length="100" name="event_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Lunch &amp; Learn" value="Lunch &amp; Learn"/>
+                <element inactive_on_update="false" label="Professional Development" value="Professional Development"/>
+            </choice>
+        </element>
         <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;var loc = current.location ? current.location + ', ' : '';&#10;&#9;var add1 = current.address_1 ? current.address_1 + ', ' : '';&#10;&#9;var add2 = current.address_2 ? current.address_2 + ', ' : '';&#10;&#10;&#9;var fullAdd = loc + add1 + add2 + current.city + ', ' + current.state + ' ' + current.zip_code;&#10;&#10;&#9;// Add your code here&#10;&#9;return fullAdd;  // return the calculated value&#10;&#10;})(current);" label="Full address" max_length="400" name="full_address" read_only="true" type="string" virtual="true"/>
         <element attributes="pdf_cell_type=image,edge_encryption_enabled=true" label="Image" max_length="40" name="image" type="user_image"/>
         <element label="Location" max_length="250" name="location" type="string"/>

@@ -69,136 +69,137 @@
 
 }]]></client_script>
         <controller_as>c</controller_as>
-        <css>$border-radius: 5px;&#13;
-&#13;
-h1,h2,h3,h4,h5,h6 {&#13;
-  font-family: europa, sans-serif;&#13;
-  font-weight: 300;&#13;
-}&#13;
-&#13;
-p,ol,ul,li,label {&#13;
-  font-family: europa, sans-serif;&#13;
-  font-weight: 300;&#13;
-}&#13;
-&#13;
-.title-block {&#13;
-  background-color: #336699;&#13;
-  color: #fff;&#13;
-  font-family: europa, sans-serif;&#13;
-  font-weight: 700;&#13;
-  font-size: 45px;&#13;
-  padding: 45px 0px;&#13;
-  border-radius: $border-radius $border-radius 0 0;&#13;
-  margin-bottom: 45px;&#13;
-  text-align: center;&#13;
-}&#13;
-&#13;
-.custom-card{&#13;
-  padding: 0px;&#13;
-  border: 0;&#13;
-  box-shadow: rgba(0, 0, 0, 0.10) 0px 0px 5px 0px;&#13;
-&#13;
-  .img-container{&#13;
-    height: 200px;&#13;
-    overflow: hidden;&#13;
-&#13;
-    img{&#13;
-      object-fit: cover;&#13;
-      width: 100%;&#13;
-      min-height: 100%;&#13;
-    }&#13;
-  }&#13;
-}&#13;
-&#13;
-.caption{&#13;
-  background-color: #fff;&#13;
-  padding: 13px;&#13;
-  border-radius: 0 0 $border-radius $border-radius;&#13;
-&#13;
-  h3 {&#13;
-    color: #0C1B21;&#13;
-  }&#13;
-&#13;
-  p {&#13;
-    color: #7A8285;&#13;
-  }&#13;
-&#13;
-}&#13;
-}&#13;
-&#13;
-.card-link:hover{&#13;
-  .custom-card{&#13;
-    box-shadow: rgba(0, 0, 0, 0.10) 5px 0px 15px 0px;&#13;
-  }&#13;
-}&#13;
-&#13;
-.event-date{&#13;
-  position: absolute;&#13;
-  left: 36px;&#13;
-  top: 20px;&#13;
-  background: #fff;&#13;
-  width: 75px;&#13;
-  height: 75px;&#13;
-  border-radius: $border-radius;&#13;
-  text-align: center;&#13;
-  padding: 30px 0;&#13;
-  box-shadow: rgba(0, 0, 0, 0.10) 5px 5px 10px 0px;&#13;
-  z-index: 3;&#13;
-&#13;
-  span{&#13;
-    font-size: 28px;&#13;
-    font-weight: 500;&#13;
-    color: #384449;&#13;
-  }&#13;
-}&#13;
-&#13;
-.calendar-top {&#13;
-  position: absolute;&#13;
-  left: 36px;&#13;
-  top: 20px;&#13;
-  background: #FF6666;&#13;
-  width: 75px;&#13;
-  height: 30px;&#13;
-  border-radius: 5px 5px 0 0;&#13;
-  text-align: center;&#13;
-  z-index: 4;&#13;
-&#13;
-  h6{&#13;
-    color: #fff;&#13;
-    font-family: europa, sans-serif;&#13;
-    font-weight: 700;&#13;
-    font-size: 22px;&#13;
-    margin: 2px 0 0 0;&#13;
-  }&#13;
-}&#13;
-&#13;
-.modal-dialog{&#13;
-  width: 75%;&#13;
-}&#13;
-&#13;
-.center{&#13;
-  text-align: center;&#13;
-}&#13;
-&#13;
-.modal-image{&#13;
-  max-width:100%;&#13;
-  object-fit: cover;&#13;
-  height: 83vh;&#13;
-}&#13;
-&#13;
-.modal-content {&#13;
-  overflow-y: scroll;&#13;
-  overflow-x: hidden;&#13;
-  height: 83vh;&#13;
-}&#13;
-&#13;
-form,.button-row {&#13;
-  width: 90%;&#13;
-}&#13;
-&#13;
-.form-group,label {&#13;
-  margin-left: 15px;&#13;
-  margin-right: 15px;&#13;
+        <css>$border-radius: 5px;
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: europa, sans-serif;
+  font-weight: 300;
+}
+
+p,ol,ul,li,label {
+  font-family: europa, sans-serif;
+  font-weight: 300;
+}
+
+.title-block {
+  background-color: #336699;
+  color: #fff;
+  font-family: europa, sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  padding: 10px 0px;
+  border-radius: $border-radius $border-radius 0 0;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.custom-card{
+  padding: 0px;
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.10) 0px 0px 5px 0px;
+
+  .img-container{
+    height: 200px;
+    overflow: hidden;
+
+    img{
+      object-fit: cover;
+      width: 100%;
+      min-height: 100%;
+    }
+  }
+}
+
+.caption{
+  background-color: #fff;
+  padding: 13px;
+  border-radius: 0 0 $border-radius $border-radius;
+
+  h3 {
+    color: #0C1B21;
+  }
+
+  p {
+    color: #7A8285;
+  }
+ 
+
+}
+}
+
+.card-link:hover{
+  .custom-card{
+    box-shadow: rgba(0, 0, 0, 0.10) 5px 0px 15px 0px;
+  }
+}
+
+.event-date{
+  position: absolute;
+  left: 36px;
+  top: 20px;
+  background: #fff;
+  width: 75px;
+  height: 75px;
+  border-radius: $border-radius;
+  text-align: center;
+  padding: 30px 0;
+  box-shadow: rgba(0, 0, 0, 0.10) 5px 5px 10px 0px;
+  z-index: 3;
+
+  span{
+    font-size: 28px;
+    font-weight: 500;
+    color: #384449;
+  }
+}
+
+.calendar-top {
+  position: absolute;
+  left: 36px;
+  top: 20px;
+  background: #FF6666;
+  width: 75px;
+  height: 30px;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  z-index: 4;
+
+  h6{
+    color: #fff;
+    font-family: europa, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin: 2px 0 0 0;
+  }
+}
+
+.modal-dialog{
+  width: 75%;
+}
+
+.center{
+  text-align: center;
+}
+
+.modal-image{
+  max-width:100%;
+  object-fit: cover;
+  height: 83vh;
+}
+
+.modal-content {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 83vh;
+}
+
+form,.button-row {
+  width: 90%;
+}
+
+.form-group,label {
+  margin-left: 15px;
+  margin-right: 15px;
 }</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -363,7 +364,10 @@ function get_eventData(){
 			zip_code:event.zip_code.getDisplayValue(),
 			sys_id:event.getUniqueValue(),
 			attendees: attendees,
-			spots_left: spotsLeft
+			spots_left: spotsLeft,
+			duration: event.duration.getDisplayValue(),
+			enrollment_status:event.enrollment_status.getDisplayValue()
+			
 		});
 	}
 
@@ -381,7 +385,7 @@ function get_eventData(){
         <sys_created_on>2018-11-30 23:28:49</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>b2c44ca6db8e230026888a18489619d8</sys_id>
-        <sys_mod_count>377</sys_mod_count>
+        <sys_mod_count>415</sys_mod_count>
         <sys_name>Reservely Card</sys_name>
         <sys_package display_value="Reservely" source="x_matsa_reservely">622edc9edb5567405dbe38f0ad9619fc</sys_package>
         <sys_policy/>
@@ -389,9 +393,9 @@ function get_eventData(){
         <sys_scope display_value="Reservely">622edc9edb5567405dbe38f0ad9619fc</sys_scope>
         <sys_update_name>sp_widget_b2c44ca6db8e230026888a18489619d8</sys_update_name>
         <sys_updated_by>hartmap</sys_updated_by>
-        <sys_updated_on>2019-05-20 18:54:03</sys_updated_on>
+        <sys_updated_on>2019-07-25 15:27:28</sys_updated_on>
         <template><![CDATA[<div class="row title-block">
-  AEGIS EVENTS
+  Upcoming Events
 </div>
 
 <div class="row">
@@ -411,8 +415,8 @@ function get_eventData(){
           </div>
           <div class="caption">
             <h3>{{event.title}}</h3>
-            <p id="limited-warning">{{event.spots_left}} spots left</p>
-            <p>{{event.day}}<br>{{event.event_start | date:'medium'}}<br>{{event.event_end | date:'medium'}}</p>
+            <p id="limited-warning">Enrollment: {{event.enrollment_status}} ({{event.spots_left}} spots left) </p>
+            <p>{{event.day}} @ {{event.event_start | date:'shortTime'}} - {{event.duration}} <br>{{event.event_type}}</p>
           </div>
         </div>
       </a>

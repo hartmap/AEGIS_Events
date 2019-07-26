@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Upcoming Events">22fa55ccdb3e7f00d3e3ec51ca9619cf</sc_cat_item>
+        <sc_catalog display_value="Resource Requests">7dd15fcf13593380431fbb722244b01e</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>hartmap</sys_created_by>
+        <sys_created_on>2019-07-18 11:41:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>81d0c2d8db76bf00aff80c65ca961962</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Resource Requests.Upcoming Events</sys_name>
+        <sys_package display_value="Reservely" source="x_matsa_reservely">622edc9edb5567405dbe38f0ad9619fc</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Reservely">622edc9edb5567405dbe38f0ad9619fc</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_81d0c2d8db76bf00aff80c65ca961962</sys_update_name>
+        <sys_updated_by>hartmap</sys_updated_by>
+        <sys_updated_on>2019-07-18 11:41:19</sys_updated_on>
+    </sc_cat_item_catalog>
+</record_update>

@@ -2,123 +2,138 @@
     <sys_ui_list parent="" relationship="" sys_domain="global" table="x_matsa_reservely_reservely_events" version="2" view="">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>number</element>
-            <list_id display_value="x_matsa_reservely_reservely_events" element="NULL" name="x_matsa_reservely_reservely_events" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">83daa74a13117f40431fbb722244b0c3</list_id>
+            <element>title</element>
+            <list_id display_value="x_matsa_reservely_reservely_events" element="NULL" name="x_matsa_reservely_reservely_events" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a2839aa6db7eb740aff80c65ca961949</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>hartmap</sys_created_by>
-            <sys_created_on>2019-05-10 16:19:45</sys_created_on>
-            <sys_id>43daa74a13117f40431fbb722244b0c4</sys_id>
+            <sys_created_on>2019-07-25 12:49:24</sys_created_on>
+            <sys_id>ea839aa6db7eb740aff80c65ca961949</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>hartmap</sys_updated_by>
-            <sys_updated_on>2019-05-10 16:19:45</sys_updated_on>
+            <sys_updated_on>2019-07-25 12:49:24</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>title</element>
-            <list_id display_value="x_matsa_reservely_reservely_events" element="NULL" name="x_matsa_reservely_reservely_events" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">83daa74a13117f40431fbb722244b0c3</list_id>
+            <element>active</element>
+            <list_id display_value="x_matsa_reservely_reservely_events" element="NULL" name="x_matsa_reservely_reservely_events" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a2839aa6db7eb740aff80c65ca961949</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>hartmap</sys_created_by>
-            <sys_created_on>2019-05-10 16:19:45</sys_created_on>
-            <sys_id>0bdaa74a13117f40431fbb722244b0c4</sys_id>
+            <sys_created_on>2019-07-25 12:49:24</sys_created_on>
+            <sys_id>6e839aa6db7eb740aff80c65ca961949</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>hartmap</sys_updated_by>
-            <sys_updated_on>2019-05-10 16:19:45</sys_updated_on>
+            <sys_updated_on>2019-07-25 12:49:24</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>active</element>
-            <list_id display_value="x_matsa_reservely_reservely_events" element="NULL" name="x_matsa_reservely_reservely_events" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">83daa74a13117f40431fbb722244b0c3</list_id>
+            <element>enrollment_status</element>
+            <list_id display_value="x_matsa_reservely_reservely_events" element="NULL" name="x_matsa_reservely_reservely_events" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a2839aa6db7eb740aff80c65ca961949</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>hartmap</sys_created_by>
-            <sys_created_on>2019-05-10 16:19:45</sys_created_on>
-            <sys_id>8bdaa74a13117f40431fbb722244b0c4</sys_id>
+            <sys_created_on>2019-07-25 12:49:24</sys_created_on>
+            <sys_id>ee839aa6db7eb740aff80c65ca961949</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>hartmap</sys_updated_by>
-            <sys_updated_on>2019-05-10 16:19:45</sys_updated_on>
+            <sys_updated_on>2019-07-25 12:49:24</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>description</element>
-            <list_id display_value="x_matsa_reservely_reservely_events" element="NULL" name="x_matsa_reservely_reservely_events" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">83daa74a13117f40431fbb722244b0c3</list_id>
+            <element>duration</element>
+            <list_id display_value="x_matsa_reservely_reservely_events" element="NULL" name="x_matsa_reservely_reservely_events" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a2839aa6db7eb740aff80c65ca961949</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>hartmap</sys_created_by>
-            <sys_created_on>2019-05-10 16:19:45</sys_created_on>
-            <sys_id>0fdaa74a13117f40431fbb722244b0c4</sys_id>
+            <sys_created_on>2019-07-25 12:49:24</sys_created_on>
+            <sys_id>62839aa6db7eb740aff80c65ca96194a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>hartmap</sys_updated_by>
-            <sys_updated_on>2019-05-10 16:19:45</sys_updated_on>
+            <sys_updated_on>2019-07-25 12:49:24</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>event_end</element>
-            <list_id display_value="x_matsa_reservely_reservely_events" element="NULL" name="x_matsa_reservely_reservely_events" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">83daa74a13117f40431fbb722244b0c3</list_id>
+            <element>max_users</element>
+            <list_id display_value="x_matsa_reservely_reservely_events" element="NULL" name="x_matsa_reservely_reservely_events" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a2839aa6db7eb740aff80c65ca961949</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>hartmap</sys_created_by>
-            <sys_created_on>2019-05-10 16:19:45</sys_created_on>
-            <sys_id>8fdaa74a13117f40431fbb722244b0c4</sys_id>
+            <sys_created_on>2019-07-25 12:49:24</sys_created_on>
+            <sys_id>e2839aa6db7eb740aff80c65ca96194a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>hartmap</sys_updated_by>
-            <sys_updated_on>2019-05-10 16:19:45</sys_updated_on>
+            <sys_updated_on>2019-07-25 12:49:24</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>event_start</element>
-            <list_id display_value="x_matsa_reservely_reservely_events" element="NULL" name="x_matsa_reservely_reservely_events" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">83daa74a13117f40431fbb722244b0c3</list_id>
+            <list_id display_value="x_matsa_reservely_reservely_events" element="NULL" name="x_matsa_reservely_reservely_events" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a2839aa6db7eb740aff80c65ca961949</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>hartmap</sys_created_by>
-            <sys_created_on>2019-05-10 16:19:45</sys_created_on>
-            <sys_id>03daa74a13117f40431fbb722244b0c5</sys_id>
+            <sys_created_on>2019-07-25 12:49:24</sys_created_on>
+            <sys_id>66839aa6db7eb740aff80c65ca96194a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>hartmap</sys_updated_by>
-            <sys_updated_on>2019-05-10 16:19:45</sys_updated_on>
+            <sys_updated_on>2019-07-25 12:49:24</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>event_type</element>
-            <list_id display_value="x_matsa_reservely_reservely_events" element="NULL" name="x_matsa_reservely_reservely_events" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">83daa74a13117f40431fbb722244b0c3</list_id>
+            <element>event_end</element>
+            <list_id display_value="x_matsa_reservely_reservely_events" element="NULL" name="x_matsa_reservely_reservely_events" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a2839aa6db7eb740aff80c65ca961949</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
             <sum>false</sum>
             <sys_created_by>hartmap</sys_created_by>
-            <sys_created_on>2019-05-10 16:19:45</sys_created_on>
-            <sys_id>83daa74a13117f40431fbb722244b0c5</sys_id>
+            <sys_created_on>2019-07-25 12:49:24</sys_created_on>
+            <sys_id>e6839aa6db7eb740aff80c65ca96194a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>hartmap</sys_updated_by>
-            <sys_updated_on>2019-05-10 16:19:45</sys_updated_on>
+            <sys_updated_on>2019-07-25 12:49:24</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>location</element>
-            <list_id display_value="x_matsa_reservely_reservely_events" element="NULL" name="x_matsa_reservely_reservely_events" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">83daa74a13117f40431fbb722244b0c3</list_id>
+            <element>event_type</element>
+            <list_id display_value="x_matsa_reservely_reservely_events" element="NULL" name="x_matsa_reservely_reservely_events" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a2839aa6db7eb740aff80c65ca961949</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>7</position>
             <sum>false</sum>
             <sys_created_by>hartmap</sys_created_by>
-            <sys_created_on>2019-05-10 16:19:45</sys_created_on>
-            <sys_id>07daa74a13117f40431fbb722244b0c5</sys_id>
+            <sys_created_on>2019-07-25 12:49:24</sys_created_on>
+            <sys_id>6a839aa6db7eb740aff80c65ca96194a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>hartmap</sys_updated_by>
-            <sys_updated_on>2019-05-10 16:19:45</sys_updated_on>
+            <sys_updated_on>2019-07-25 12:49:24</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>location</element>
+            <list_id display_value="x_matsa_reservely_reservely_events" element="NULL" name="x_matsa_reservely_reservely_events" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a2839aa6db7eb740aff80c65ca961949</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>hartmap</sys_created_by>
+            <sys_created_on>2019-07-25 12:49:24</sys_created_on>
+            <sys_id>ea839aa6db7eb740aff80c65ca96194a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>hartmap</sys_updated_by>
+            <sys_updated_on>2019-07-25 12:49:24</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -132,10 +147,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>hartmap</sys_created_by>
-            <sys_created_on>2019-05-10 16:19:45</sys_created_on>
+            <sys_created_on>2019-07-25 12:49:24</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
-            <sys_id>83daa74a13117f40431fbb722244b0c3</sys_id>
+            <sys_id>a2839aa6db7eb740aff80c65ca961949</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_matsa_reservely_reservely_events</sys_name>
             <sys_package display_value="Reservely" source="x_matsa_reservely">622edc9edb5567405dbe38f0ad9619fc</sys_package>
@@ -144,7 +159,7 @@
             <sys_scope display_value="Reservely">622edc9edb5567405dbe38f0ad9619fc</sys_scope>
             <sys_update_name>sys_ui_list_x_matsa_reservely_reservely_events_null</sys_update_name>
             <sys_updated_by>hartmap</sys_updated_by>
-            <sys_updated_on>2019-05-10 16:19:45</sys_updated_on>
+            <sys_updated_on>2019-07-25 12:49:24</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

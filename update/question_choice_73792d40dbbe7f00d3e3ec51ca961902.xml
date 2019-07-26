@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <misc>0</misc>
+        <order>200</order>
+        <question display_value="Location">3efa5900db7e7f00d3e3ec51ca96192b</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>hartmap</sys_created_by>
+        <sys_created_on>2019-07-17 15:21:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>73792d40dbbe7f00d3e3ec51ca961902</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Training Room (18 Seats)</sys_name>
+        <sys_package display_value="Reservely" source="x_matsa_reservely">622edc9edb5567405dbe38f0ad9619fc</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Reservely">622edc9edb5567405dbe38f0ad9619fc</sys_scope>
+        <sys_update_name>question_choice_73792d40dbbe7f00d3e3ec51ca961902</sys_update_name>
+        <sys_updated_by>hartmap</sys_updated_by>
+        <sys_updated_on>2019-07-25 11:59:10</sys_updated_on>
+        <text>Training Room (18 Seats)</text>
+        <value>Training Room</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=73792d40dbbe7f00d3e3ec51ca961902"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>73792d40dbbe7f00d3e3ec51ca961902</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>hartmap</sys_created_by>
+        <sys_created_on>2019-07-17 15:21:10</sys_created_on>
+        <sys_id>fb892540dbbe7f00d3e3ec51ca961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hartmap</sys_updated_by>
+        <sys_updated_on>2019-07-17 15:21:10</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>73792d40dbbe7f00d3e3ec51ca961902</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>hartmap</sys_created_by>
+        <sys_created_on>2019-07-17 15:21:10</sys_created_on>
+        <sys_id>b3892540dbbe7f00d3e3ec51ca961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hartmap</sys_updated_by>
+        <sys_updated_on>2019-07-17 15:21:10</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>
