@@ -9,36 +9,36 @@
         <hint/>
         <homepage/>
         <image/>
-        <link_type>LIST</link_type>
+        <link_type>REPORT</link_type>
         <map_page/>
-        <mobile_title>Reservely Attendees</mobile_title>
+        <mobile_title>Attendee Reports</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_matsa_reservely_reservely_attendees</name>
-        <order>100</order>
+        <name/>
+        <order>200</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
-        <report/>
+        <report display_value="Upcoming Events">0b0866b31b36bf00b3554005bd4bcbe0</report>
         <roles>x_matsa_reservely.reservely_attendees_user</roles>
         <survey/>
-        <survey_overwrite>false</survey_overwrite>
+        <survey_overwrite>true</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
-        <sys_created_by>josh.virelli</sys_created_by>
-        <sys_created_on>2018-12-18 21:39:46</sys_created_on>
+        <sys_created_by>hartmap</sys_created_by>
+        <sys_created_on>2019-07-29 11:34:31</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
-        <sys_id>68c8901cdba2230026888a1848961970</sys_id>
+        <sys_id>46a8ea371b36bf00b3554005bd4bcb83</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name>Upcoming Events - Attendees</sys_name>
+        <sys_name>Attendee Reports</sys_name>
         <sys_overrides/>
         <sys_package display_value="Reservely" source="x_matsa_reservely">622edc9edb5567405dbe38f0ad9619fc</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Reservely">622edc9edb5567405dbe38f0ad9619fc</sys_scope>
-        <sys_update_name>sys_app_module_68c8901cdba2230026888a1848961970</sys_update_name>
+        <sys_update_name>sys_app_module_46a8ea371b36bf00b3554005bd4bcb83</sys_update_name>
         <sys_updated_by>hartmap</sys_updated_by>
-        <sys_updated_on>2019-07-29 11:33:07</sys_updated_on>
+        <sys_updated_on>2019-07-29 11:36:29</sys_updated_on>
         <timeline_page/>
-        <title>Upcoming Events - Attendees</title>
+        <title>Attendee Reports</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

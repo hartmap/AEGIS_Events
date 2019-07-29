@@ -54,7 +54,7 @@
         <sys_created_by>josh.virelli</sys_created_by>
         <sys_created_on>2018-12-18 21:46:34</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>8ecb639513e93300f97f5f722244b0c7</sys_id>
+        <sys_id>ab3428071b76bb00b3554005bd4bcbe0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Last name</sys_name>
         <sys_package display_value="Reservely" source="x_matsa_reservely">622edc9edb5567405dbe38f0ad9619fc</sys_package>
@@ -63,7 +63,7 @@
         <sys_scope display_value="Reservely">622edc9edb5567405dbe38f0ad9619fc</sys_scope>
         <sys_update_name>sys_dictionary_x_matsa_reservely_reservely_attendees_last_name</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2019-05-20 18:44:06</sys_updated_on>
+        <sys_updated_on>2019-07-26 18:00:09</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

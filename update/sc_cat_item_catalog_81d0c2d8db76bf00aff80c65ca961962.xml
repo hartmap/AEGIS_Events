@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
     <sc_cat_item_catalog action="INSERT_OR_UPDATE">
         <sc_cat_item display_value="Upcoming Events">22fa55ccdb3e7f00d3e3ec51ca9619cf</sc_cat_item>
-        <sc_catalog display_value="Resource Requests">7dd15fcf13593380431fbb722244b01e</sc_catalog>
+        <sc_catalog display_value="">7dd15fcf13593380431fbb722244b01e</sc_catalog>
         <sys_class_name>sc_cat_item_catalog</sys_class_name>
         <sys_created_by>hartmap</sys_created_by>
         <sys_created_on>2019-07-18 11:41:19</sys_created_on>
