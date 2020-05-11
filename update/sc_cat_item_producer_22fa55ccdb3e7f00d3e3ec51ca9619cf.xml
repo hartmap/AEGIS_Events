@@ -13,6 +13,7 @@
         <description><![CDATA[<p><strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Reminder: If you would like to add an image to your event&nbsp;click on the paperclip icon in the upper right corner of the panel and select your image.&nbsp;</span></strong></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>]]></description>
+        <display_price_property>non_zero</display_price_property>
         <entitlement_script/>
         <group/>
         <hide_sp>false</hide_sp>

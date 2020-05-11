@@ -2,7 +2,7 @@
     <sysevent_email_action action="INSERT_OR_UPDATE">
         <action_insert>false</action_insert>
         <action_update>false</action_update>
-        <active>true</active>
+        <active>false</active>
         <advanced_condition/>
         <affected_field_on_event/>
         <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
@@ -61,7 +61,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>1395b336dbf23b40aff80c65ca961939</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Event Reminders</sys_name>
         <sys_overrides/>
         <sys_package display_value="Reservely" source="x_matsa_reservely">622edc9edb5567405dbe38f0ad9619fc</sys_package>
@@ -69,8 +69,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Reservely">622edc9edb5567405dbe38f0ad9619fc</sys_scope>
         <sys_update_name>sysevent_email_action_1395b336dbf23b40aff80c65ca961939</sys_update_name>
-        <sys_updated_by>hartmap</sys_updated_by>
-        <sys_updated_on>2019-07-26 14:54:12</sys_updated_on>
+        <sys_updated_by>smiths2</sys_updated_by>
+        <sys_updated_on>2019-10-01 18:32:36</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>

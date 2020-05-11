@@ -27,9 +27,9 @@
         <event_parm_2>false</event_parm_2>
         <exclude_delegates>false</exclude_delegates>
         <force_delivery>false</force_delivery>
-        <from>reservely@cloudpires.com</from>
+        <from/>
         <generation_type>event</generation_type>
-        <importance/>
+        <importance>high</importance>
         <include_attachments>false</include_attachments>
         <item>event.parm1</item>
         <item_table/>
@@ -49,7 +49,7 @@
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Reservely Event unregister confirmation</subject>
+        <subject>Upcoming Event unregister confirmation</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>josh.virelli</sys_created_by>
@@ -57,7 +57,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>85a6d5e0dbae230026888a18489619ca</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>Reservely Event Unregistration</sys_name>
         <sys_overrides/>
         <sys_package display_value="Reservely" source="x_matsa_reservely">622edc9edb5567405dbe38f0ad9619fc</sys_package>
@@ -65,8 +65,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Reservely">622edc9edb5567405dbe38f0ad9619fc</sys_scope>
         <sys_update_name>sysevent_email_action_85a6d5e0dbae230026888a18489619ca</sys_update_name>
-        <sys_updated_by>josh.virelli</sys_updated_by>
-        <sys_updated_on>2018-12-26 21:06:32</sys_updated_on>
+        <sys_updated_by>smiths2</sys_updated_by>
+        <sys_updated_on>2019-08-05 20:23:12</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

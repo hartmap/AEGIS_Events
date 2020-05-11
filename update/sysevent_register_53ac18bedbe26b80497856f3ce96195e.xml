@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
     <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
         <description>Fires calendar invite notification to email address provided</description>
         <event_name>x_matsa_reservely.reservely.calendar.int</event_name>
         <fired_by>Reservely confirmation processor</fired_by>

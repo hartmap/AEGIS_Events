@@ -7,15 +7,15 @@
         <sys_created_on>2018-12-19 17:03:05</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>9ee2a424db2e230026888a18489619bf</sys_id>
-        <sys_mod_count>39</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name>register-modal.html</sys_name>
         <sys_package display_value="Reservely" source="x_matsa_reservely">622edc9edb5567405dbe38f0ad9619fc</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Reservely">622edc9edb5567405dbe38f0ad9619fc</sys_scope>
         <sys_update_name>sp_ng_template_9ee2a424db2e230026888a18489619bf</sys_update_name>
-        <sys_updated_by>tomasij</sys_updated_by>
-        <sys_updated_on>2019-07-25 14:45:11</sys_updated_on>
+        <sys_updated_by>smiths2</sys_updated_by>
+        <sys_updated_on>2019-09-13 17:53:14</sys_updated_on>
         <template><![CDATA[<!-- RegisterModal -->
 <div id="informationModal-{{c.data.event.number}}">
   <div class="modal-header">
@@ -25,144 +25,153 @@
   <div class="image-container">
     <div class="col-sm-12 col-md-6">
       <img src={{c.data.event.image}} alt="" class="modal-image">
+      <div class="modal-title">
+        <h5>{{c.data.event.title}} - {{c.data.event.event_start | date: 'medium'}}</h5>
+      </div>
+      <div class="modal-body" ng-bind-html="::c.data.event.description"></div>
+ 
     </div>
     <div class="col-sm-12 col-md-6">
-      <div class="modal-body" ng-bind-html="::c.data.event.description"></div>
-
+      
+ 
       <!-- Form -->
       <div ng-show="!c.data.successfulRegister && !c.data.successfulUnregister">
+        <br>
         <form name="informationModal" novalidate>
           <label>First name</label>
           <div class="form-group">
             <input required sp-autosize="true" ng-required="true" ng-model="data.firstName" name="firstName" class="form-control ng-pristine ng-valid ng-scope ng-empty ng-touched" aria-invalid="false">
           </div>
-
+ 
           <label>Last name</label>
           <div class="form-group">
             <input required sp-autosize="true" ng-required="true" ng-model="data.lastName" name="lastName" class="form-control ng-pristine ng-valid ng-scope ng-empty ng-touched" aria-invalid="false">
           </div>
-
+ 
           <label>Company</label>
           <div class="form-group">
             <input required sp-autosize="true" ng-required="true" ng-model="data.company" name="company" class="form-control ng-pristine ng-valid ng-scope ng-empty ng-touched" aria-invalid="false">
           </div>
-
+ 
           <!--Email validation error -->
           <div ng-if="c.data.showEmailValidationError" class="alert alert-danger fade in" role="alert">
-            Please enter a valid email address.
+           Please enter a valid email address.
           </div>
-
+ 
           <label>Email address</label>
           <div class="form-group">
             <input required sp-autosize="true" ng-required="true" ng-model="data.email" name="email" class="form-control ng-pristine ng-valid ng-scope ng-empty ng-touched" aria-invalid="false">
           </div>
-
+ 
           <!--Email confirm error -->
           <div ng-if="c.data.showEmailConfirmationError" class="alert alert-danger fade in" role="alert">
             Please ensure the emails addresses entered match.
           </div>
-
+ 
           <label>Confirm email address</label>
           <div class="form-group">
             <input required sp-autosize="true" ng-required="true" ng-model="data.confirm_email" name="confirm_email" class="form-control ng-pristine ng-valid ng-scope ng-empty ng-touched" aria-invalid="false">
           </div>
-
+ 
         </form>
       </div>
-
-
+ 
+ 
       <div ng-if="c.data.unregisterNotFound" class="alert alert-danger fade in" role="alert">
         <strong>Not found!</strong><br>
         We are unable to find a registered user with that email address for this event.
       </div>
-
+ 
       <div ng-if="c.data.successfulUnregister" class="alert alert-danger fade in" role="alert">
         <strong>Bummer!</strong><br>
         We have sent you an email to confirm, please click the link there to complete the unregistration process.<br>
         Your spot won't be given up until you confirm.
       </div>
-
+ 
       <div ng-if="c.data.duplicateRegister" class="alert alert-danger fade in" role="alert">
         <strong>You are already signed up!</strong><br>
         We found a user with that email address who is already registered for this event.
       </div>
-
+ 
       <div ng-if="c.data.successfulRegister" class="alert alert-success fade in" role="alert">
         <strong>All right!</strong><br>
         We have sent you an email to confirm, please click the link there to complete the registration process.<br>
         Your spot won't be guaranteed until you confirm.
       </div>
-
+ 
       <!-- Buttons -->
       <div class="button-row">
-
+ 
         <div class="col-sm-4 button-container">
           <button type="button" class="btn btn-default" ng-click="c.closeModal()">Close</button>
         </div>
-
-
+ 
+ 
         <div class="col-sm-4 button-container" ng-if="!c.data.successfulRegister && !c.data.successfulUnregister">
           <button type="button" class="btn btn-danger" ng-disabled="informationModal.email.$invalid || informationModal.confirm_email.$invalid" ng-click="informationModal.email.$valid && informationModal.confirm_email.$valid && c.uiAction('unregister',c.data.event.sys_id)">Unregister</button>
         </div>
-
+ 
         <div class="col-sm-4 button-container" id="register-button" ng-if="!c.data.successfulRegister && !c.data.successfulUnregister">
           <button type="button" class="btn btn-success" ng-disabled="informationModal.$invalid" ng-click="informationModal.$valid && c.uiAction('register',c.data.event.sys_id)">Register</button>
         </div>
-
+ 
       </div>
     </div>
   </div>
 </div>
-
+ 
 <style>
   h1,h2,h3,h4,h5,h6 {
     font-family: europa, sans-serif;
     font-weight: 700;
   }
-
+ 
   p,ol,ul,li,label {
     font-family: europa, sans-serif;
     font-weight: 300;
   }
-
+ 
   .modal-dialog{
     width: 75%;
   }
-
+ 
   .center{
     text-align: center;
   }
-
+ 
   .modal-image{
     max-width:100%;
     object-fit: cover;
-    height: 77vh;
+    height: 36vh;
   }
-
+  .modal-title {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
   .modal-content {
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 83vh;
+   height: 83vh;
   }
-
+ 
   form, .button-row{
     width: 90%;
   }
-
+ 
   .button-container {
     padding-bottom: 15px;
   }
-
+ 
   .form-group,label {
     margin-left: 15px;
     margin-right: 15px;
   }
-
+ 
   .image-container {
     margin-left: -15px;
     margin-right: -15px;
   }
-
+ 
   #register-button {
     text-align: right;
     @media (max-width: 768px){
@@ -170,24 +179,24 @@
       margin-left: 15px;
     }
   }
-
+ 
   .btn-success{
     color: #fff;
     background-color: #00D2C9;
     border-color: #00BFB7;
   }
-
+ 
   .btn-success:hover, .btn-success:active, .btn-success:active:hover, .btn-success:active:focus, .btn-success.focus:active, .btn-success.active:hover, .btn-success.active:focus, .btn-success.active.focus, .open > .btn-success.dropdown-toggle:hover, .open > .btn-success.dropdown-toggle:focus, .open > .btn-success.dropdown-toggle.focus, .btn-success:focus, .btn-success.focus {
     background-color: #00ACA5;
     border-color: #009993;
   }
-
+ 
   .btn-danger{
     color: #fff;
     background-color: #FF6666;
     border-color: #E85D5D;
   }
-
+ 
   .btn {
     width: 100%;
   }

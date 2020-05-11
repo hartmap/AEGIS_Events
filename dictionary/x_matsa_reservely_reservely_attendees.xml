@@ -7,8 +7,12 @@
         <element attributes="edge_encryption_enabled=true" label="Event" max_length="32" name="event" reference="x_matsa_reservely_reservely_events" type="reference"/>
         <element label="First name" max_length="400" name="first_name" type="string"/>
         <element label="Last name" max_length="400" name="last_name" type="string"/>
+        <element label="Username" max_length="32" name="username" reference="sys_user" type="reference"/>
         <index name="index">
             <element name="event"/>
+        </index>
+        <index name="index2">
+            <element name="username"/>
         </index>
     </element>
 </database>

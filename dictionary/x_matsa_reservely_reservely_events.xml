@@ -27,8 +27,10 @@
         <element attributes="edge_encryption_enabled=true" label="Event Start" max_length="40" name="event_start" type="glide_date_time"/>
         <element choice="1" label="Event Type" mandatory="true" max_length="100" name="event_type" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Lunch &amp; Learn" value="Lunch &amp; Learn"/>
+                <element inactive_on_update="false" label="Information Session" value="Information Session"/>
+                <element inactive="true" inactive_on_update="true" label="Lunch &amp; Learn" value="Lunch &amp; Learn"/>
                 <element inactive_on_update="false" label="Professional Development" value="Professional Development"/>
+                <element inactive_on_update="false" label="Happy Hour" sequence="5000" value="happy hour"/>
             </choice>
         </element>
         <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;var loc = current.location ? current.location + ', ' : '';&#10;&#9;var add1 = current.address_1 ? current.address_1 + ', ' : '';&#10;&#9;var add2 = current.address_2 ? current.address_2 + ', ' : '';&#10;&#10;&#9;var fullAdd = loc + add1 + add2 + current.city + ', ' + current.state + ' ' + current.zip_code;&#10;&#10;&#9;// Add your code here&#10;&#9;return fullAdd;  // return the calculated value&#10;&#10;})(current);" label="Full address" max_length="400" name="full_address" read_only="true" type="string" virtual="true"/>
@@ -36,6 +38,7 @@
         <element label="Location" max_length="250" name="location" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Max Users" max_length="40" name="max_users" type="integer"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Registered Users" max_length="40" name="registered_users" read_only="true" type="integer"/>
         <element label="State" max_length="25" name="state" type="string"/>
         <element label="Title" max_length="100" name="title" type="string"/>
         <element label="Zip Code" max_length="5" name="zip_code" type="string"/>

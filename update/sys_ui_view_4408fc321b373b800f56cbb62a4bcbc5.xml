@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>sp</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>smiths2</sys_created_by>
+        <sys_created_on>2019-09-13 17:50:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4408fc321b373b800f56cbb62a4bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sp</sys_name>
+        <sys_package display_value="Reservely" source="x_matsa_reservely">622edc9edb5567405dbe38f0ad9619fc</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Reservely">622edc9edb5567405dbe38f0ad9619fc</sys_scope>
+        <sys_update_name>sys_ui_view_4408fc321b373b800f56cbb62a4bcbc5</sys_update_name>
+        <sys_updated_by>smiths2</sys_updated_by>
+        <sys_updated_on>2019-09-13 17:50:43</sys_updated_on>
+        <title>Sp</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

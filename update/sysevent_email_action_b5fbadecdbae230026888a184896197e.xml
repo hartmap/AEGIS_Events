@@ -49,7 +49,7 @@
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Reservely Event confirmation</subject>
+        <subject>Upcoming Event confirmation</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>josh.virelli</sys_created_by>
@@ -57,7 +57,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>b5fbadecdbae230026888a184896197e</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Reservely Event Confirmation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Reservely" source="x_matsa_reservely">622edc9edb5567405dbe38f0ad9619fc</sys_package>
@@ -66,7 +66,7 @@
         <sys_scope display_value="Reservely">622edc9edb5567405dbe38f0ad9619fc</sys_scope>
         <sys_update_name>sysevent_email_action_b5fbadecdbae230026888a184896197e</sys_update_name>
         <sys_updated_by>hartmap</sys_updated_by>
-        <sys_updated_on>2019-05-17 15:16:34</sys_updated_on>
+        <sys_updated_on>2019-07-30 12:28:26</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

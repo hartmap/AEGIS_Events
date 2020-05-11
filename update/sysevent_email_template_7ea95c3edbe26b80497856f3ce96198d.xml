@@ -49,7 +49,51 @@ CLASS:PUBLIC
 END:VCALENDAR]]></message>
         <message_html/>
         <message_list/>
-        <message_text/>
+        <message_text><![CDATA[BEGIN:VCALENDAR
+PRODID:-//Service-now.com//Outlook 11.0 MIMEDIR//EN
+VERSION:2.0
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Eastern Standard Time
+BEGIN:STANDARD
+DTSTART:16011104T020000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=11
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010311T020000
+RRULE:FREQ=YEARLY;BYDAY=2SU;BYMONTH=3
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ATTENDEE;ROLE=REQ-PARTICIPANT;RSVP=TRUE:MAILTO:${to}
+ORGANIZER:mailto:aegislimited@service-now.com
+DTSTART:${dt_start}
+DTEND:${dt_end}
+LOCATION:${location}
+TRANSP:OPAQUE
+SEQUENCE:0
+UID:${sys_id}
+DTSTAMP:${dtstamp}
+DESCRIPTION:Description -  ${description}  
+SUMMARY:${title}
+PRIORITY:5
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//E
+                N">\n<HTML>\n<HEAD>\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html\; 
+                charset=iso-8859-1">\n<META NAME="Generator" CONTENT="MS Exchange Server v
+                ersion 14.03.0162.000">\n<TITLE>AEGIS</TITLE>\n</HEAD>\n<BODY>\n<!-- Co
+                nverted from text/rtf format -->\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FA
+                CE="Calibri">${description}</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us">
+                <FONT FACE="Calibri"></FONT></SPAN><SPAN LANG="en-us"></SPAN></P>\n\n</BODY>\n</HTML>
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MS-OLK-AUTOSTARTCHECK:FALSE
+CLASS:PUBLIC
+END:VCALENDAR]]></message_text>
         <name>reservely.calendar.integration</name>
         <sms_alternate/>
         <subject>SPECIAL CASE TEMPLATE -- Push changes into an outlook calendar</subject>
@@ -58,7 +102,7 @@ END:VCALENDAR]]></message>
         <sys_created_on>2018-12-26 16:10:12</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7ea95c3edbe26b80497856f3ce96198d</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>reservely.calendar.integration</sys_name>
         <sys_package display_value="Reservely" source="x_matsa_reservely">622edc9edb5567405dbe38f0ad9619fc</sys_package>
         <sys_policy/>
@@ -66,7 +110,7 @@ END:VCALENDAR]]></message>
         <sys_scope display_value="Reservely">622edc9edb5567405dbe38f0ad9619fc</sys_scope>
         <sys_update_name>sysevent_email_template_7ea95c3edbe26b80497856f3ce96198d</sys_update_name>
         <sys_updated_by>hartmap</sys_updated_by>
-        <sys_updated_on>2019-05-21 15:22:15</sys_updated_on>
-        <sys_version/>
+        <sys_updated_on>2019-11-11 18:21:41</sys_updated_on>
+        <sys_version>2</sys_version>
     </sysevent_email_template>
 </record_update>

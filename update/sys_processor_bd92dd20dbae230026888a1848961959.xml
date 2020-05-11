@@ -28,7 +28,7 @@
 
 	//Send calendar cancellation
 	gs.eventQueue('x_matsa_reservely.calendar.integration.r',ev,email,'');
-	
+//05-05-2019 SJS comment out below code	
 	//Write message to screen
 	g_processor.writeOutput("text/plain", 'The email address: ' + email + ' has been unregistered for the event "' + event +'"');
 
@@ -38,15 +38,15 @@
         <sys_created_on>2018-12-19 20:36:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>bd92dd20dbae230026888a1848961959</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>ReservelyEventUnregistration</sys_name>
         <sys_package display_value="Reservely" source="x_matsa_reservely">622edc9edb5567405dbe38f0ad9619fc</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Reservely">622edc9edb5567405dbe38f0ad9619fc</sys_scope>
         <sys_update_name>sys_processor_bd92dd20dbae230026888a1848961959</sys_update_name>
-        <sys_updated_by>josh.virelli</sys_updated_by>
-        <sys_updated_on>2019-01-02 17:20:45</sys_updated_on>
+        <sys_updated_by>smiths2</sys_updated_by>
+        <sys_updated_on>2019-08-05 20:24:55</sys_updated_on>
         <type>script</type>
     </sys_processor>
 </record_update>
